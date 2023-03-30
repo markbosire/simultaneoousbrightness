@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML, CSS and JavaScript demo</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+      }
+      .body {
+        background: linear-gradient(
+          90deg,
+          #ff6ad5 0%,
+          #c774e8 50%,
+          #ad8cfe 100%
+        );
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        text-shadow: 0 0 10px #ff6ad5, 0 0 20px #c774e8, 0 0 30px #ad8cfe;
+      }
+
+      p {
+        max-width: 800px;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-shadow: 0 0 5px #ff6ad5, 0 0 10px #c774e8, 0 0 15px #ad8cfe;
+      }
+      .gradient {
+        background: linear-gradient(to bottom, #000, #fff, #fff);
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: #ababab;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(100% - 50px);
+        left: calc(50% - 25px);
+        animation: moveCircle 10s linear infinite;
+      }
+
+      @keyframes moveCircle {
+        0% {
+          top: calc(100% - 50px);
+        }
+
+        25% {
+          top: 0;
+        }
+        50% {
+          top: 0;
+        }
+
+        100% {
+          top: calc(100% - 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <h1>Simultaneous Brightness Theory in UI Design</h1>
+      <p>
+        Simultaneous brightness theory plays a significant role in UI design as
+        it influences the perception of colors and brightness. When two colors
+        are placed side by side, their perceived brightness can change,
+        affecting the overall visual appeal and readability of the interface. In
+        UI design, it's essential to consider this phenomenon when selecting
+        color schemes, backgrounds, and text colors to ensure a harmonious and
+        visually pleasing user experience. By understanding simultaneous
+        brightness theory, designers can create more effective and aesthetically
+        appealing interfaces that cater to users' visual perception. The circle
+        below seems to change colour even though the colour has not changed
+      </p>
+    </div>
+    <div class="gradient">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
